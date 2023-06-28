@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
 html,
 body {
   padding: 0;
@@ -13,4 +16,450 @@ a {
 
 * {
   box-sizing: border-box;
+
 }
+
+/* sidebar */
+.sideBarContainer{
+  display: flex;
+  padding: 20px;
+  background-color: #F2EAE1;
+}
+
+.sidebar {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 96vh;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav a{
+  display: flex;
+  gap: 10px;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logout{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logout svg{
+  margin-left: 10px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo img{
+  width: 50%;
+  border-radius: 50%;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-info h3{
+
+}
+
+.profile-info p{
+  font-size: 14px;
+  color: #FEAF00;
+}
+
+.active {
+  background: #FEAF00;
+  border-radius: 8px;
+}
+/* sidebar */
+
+
+/* header */
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+  color: #C4C4C4;
+}
+/* header */
+
+/* login */
+@media screen and (max-width: 992px) {
+    .formContainer{
+        padding: 20px !important;
+        background: white !important;
+        border-radius: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-shadow: -2px -1px 58px 0px rgba(0,0,0,0.28) !important;
+        gap: 40px !important;
+        justify-content: center !important;
+        width: auto !important;
+    }
+}
+.genelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, rgba(254,175,0,1) 0%, rgba(248,212,66,1) 100%);
+  }
+
+  .formContainer{
+    padding: 0px 40px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px -1px 58px 0px rgba(0,0,0,0.28);
+    gap: 40px;
+    height: 550px;
+    justify-content: center;
+    width: 35%;
+  }
+
+  .logoContainer{
+    height: auto;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .brandName{
+    border-left: 6px solid #F8D442;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .informationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+  }
+
+  .informationContainer h2{
+    margin: 0;
+  }
+
+  .informationContainer p{
+    font-weight: 200;
+    font-size: 13px;
+    margin: 0;
+  }
+  
+  .inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .inputContainer input {
+    height: 30px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+  }
+
+  .signInBtn{
+    color: white;
+    background: #FEAF00;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .forgot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .resetPassword {
+    color: #FEAF00;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  /* login */
+
+  /* home */
+
+  .homeContainer{
+    display: flex;
+  }
+
+  .mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containers{
+    display: flex;
+    gap: 30px;
+  }
+
+  .container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 8px;
+    height: 155px;
+    gap: 15px;
+  }
+
+  .students{
+    background: #F0F9FF;
+  }
+
+  .courses{
+    background-color: #FEF6FB;
+  }
+
+  .payments{
+    background-color: #FEFBEC;
+  }
+
+  .users{
+    background: linear-gradient(45deg, rgba(254,175,0,1) 0%, rgba(248,212,66,1) 100%);
+  }
+  .subContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .text{
+    color: #6C6C6C;
+  }
+
+  .count{
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .contentContainer{
+    width: 93%;
+  }
+
+  /* home */
+
+  /* stundent */
+  .studentContainer{
+    background: #F8F8F8;
+    width: 100%;
+    height: 100%;
+  }
+
+  .studentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 15px;
+  }
+
+  .searchAndAdd{
+    display: flex;
+    gap: 25px;
+  }
+
+  .searchBar{
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .newStdBtn {
+    width: 150px;
+    background-color: #FEAF00;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .popup{
+    position: fixed;
+    left: 45%;
+    top: 35%;
+    background: white;
+    padding: 50px;
+    display: flex;
+    border-radius: 20px;
+    z-index: 2;
+  }
+
+  .popup-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .popup-inner input{
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+  }
+
+  .popup-inner button{
+    width: 70%;
+    background-color: #FEAF00;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .popupBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    gap: 15px;
+  }
+
+  .buttons button {
+    border: none;
+    background: transparent;
+    gap: 10px;
+  }
+
+  .paggination {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    gap: 25px;
+  }
+
+  .student-list{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .studentList-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .student {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  img.student-image {
+    width: 100px;
+  }
+
+  .student-actions {
+    display: flex;
+    gap: 10px;
+    /* border: none; */
+    padding: 15px;
+  }
+
+  .student-actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 0px 30px 30px 30px;
+    color: #9FA2B4;
+  }
+
+  .pagination select{
+    padding: 2px;
+    border: none;
+    background: transparent;
+  }
+
+  .rowsPerPage{
+    display: flex;
+    gap: 20px; 
+  }
+
+  .previousNext {
+    gap: 20px;
+    display: flex;
+  }
+
+  .previousNext button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  /* student */
+  
